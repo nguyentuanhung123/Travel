@@ -1,0 +1,64 @@
+@media (max-width : 1200px) {
+    
+    section{
+        padding: 3rem 5%;
+    }
+}
+
+@media (max-width : 991px) {
+
+    html{
+        font-size: 55%;
+    }
+    
+    section{
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width : 768px) {
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        padding: 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0 , 0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100% , 0 100%);
+    }
+
+    .header .navbar ul{
+        flex-direction: column;
+    }
+
+    .header .navbar li a{
+        display: block;
+        margin: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width : 450px) {
+
+    html{
+        font-size: 50%;
+    }
+
+    .heading-title{
+        font-size: 3.5rem;
+    }
+    
+}
